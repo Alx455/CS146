@@ -9,8 +9,4 @@ def twoSum(nums, target):
             answer[1] = j
     return answer    
     
-    
-    
-arr = [5, 2, 3]
-ans = twoSum(arr, 8)
-print(ans)
+
