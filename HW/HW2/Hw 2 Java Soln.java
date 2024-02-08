@@ -3,7 +3,7 @@ public class Main {
     static int firstBadVersion(int n) {
         int left = 1;
         int right = n;
-	      int mid;
+	int mid;
         int prev = 0;
         while (left <= right) {
             mid = (left + right) / 2;
@@ -14,7 +14,7 @@ public class Main {
                 left = mid + 1;
             }
         }
-	      return prev;
+	return prev;
     }
 
      public static void main(String[] args) {
