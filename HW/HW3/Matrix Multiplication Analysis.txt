@@ -1,11 +1,11 @@
 MATRIX_MULTIPLY(A, B): 
-  if columns(A) ≠ rows(B):                                          # 1
-    raise ValueError("Matrix multiplication is not defined.")       # 1
+  if columns(A) ≠ rows(B):                                          # c1
+    raise ValueError("Matrix multiplication is not defined.")       # c2
 
-  rows_A ← number of rows in A                                      # 1
-  cols_A ← number of columns in A                                   # 1
-  cols_B ← number of columns in B                                   # 1
-  result ← matrix of size rows_A x cols_B filled with zeros         # 1
+  rows_A ← number of rows in A                                      # c3
+  cols_A ← number of columns in A                                   # c4
+  cols_B ← number of columns in B                                   # c5
+  result ← matrix of size rows_A x cols_B filled with zeros         # c6
 
   for i from 1 to rows_A do:                                        # 
     for j from 1 to cols_B do: 
@@ -15,5 +15,5 @@ MATRIX_MULTIPLY(A, B):
       result[i][j] ← sum return result
 
 
-The function of matrix multiplication is
+The function of matrix multiplication is in the form
 f(n) = 
