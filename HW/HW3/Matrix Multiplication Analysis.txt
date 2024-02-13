@@ -17,4 +17,5 @@ MATRIX_MULTIPLY(A, B):
 
 The function of matrix multiplication is in the form
 f(n) = (c7 + m)n^2 + n + c1 + c2 + c3 + c4 + c5 + c6
+This function has an exponential order of growth and its time complexitry is n^2
 
