@@ -12,4 +12,4 @@ end while
 
 The function of insertion sort is in the polynomial form
 f(n) = ax^2 + bx + c
-This function has an exponential order of growth.
+This function has an exponential order of growth and its time complexitry is n^2
