@@ -2,12 +2,24 @@ Insertion Sort pseudo:
 
 i ← 1                                     # c1
 while i < length(A)                       # N
-    j ← i
-    while j > 0 and A[j-1] > A[j]         # N 
+    j ← i                                 # c2
+    while j > 0 and A[j-1] > A[j]         # N - k
         swap A[j] and A[j-1]              # c3
         j ← j - 1                         # c4
-    end while
-    i ← i + 1
+    end while                             
+    i ← i + 1                             # c5
 end while
 
-The function for insertion sort is 
+The function of insertion sort looks something like
+f(n) = (c2 + c3 + c4 + c5)n^2 + c1
+Big O of insertion sort: 
+g(n) = (c2 + c3 + c4 + c5)n^2 + (c1)n^2
+O(n^2)
+
+Big Omega of insertion sort:
+g(n) = (c2 + c3 + c4 + c5)n^2
+Omega(n^2)
+
+Theta of insertion sort:
+n^2 <= (c2 + c3 + c4 + c5)n^2 + c1 <= (c2 + c3 + c4 + c5 + c6)n^2
+Theta(n^2)
