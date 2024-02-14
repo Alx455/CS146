@@ -1,2 +1,16 @@
 Analysys for Insertion sort:
-
+Best case: 
+           The elements are already sorted thus the time complexity will
+           be O(n) as it will only iterate through the outer while loop,
+           the inner while loop condition will never evaluate to true, so
+           the inner loop will never run.
+Average case:
+           The elements are unsorted
+Worst case:
+           The elements are sorted in the opposite order in which inserrtion
+           sort is designed to sort them(in most cases, insertion sort orders
+           elements in ascending order, so the worst case would be elements
+           sorted in ascending order, or vice versa). The time comlexity would
+           be O(n^2) as the outer while loop would run N times, and the inner
+           loop would run more iterations as the sorted left subarray grows.
+           The amount of times the inner loop would run approaches N times.
