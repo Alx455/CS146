@@ -1,4 +1,5 @@
 Analysys for Insertion sort:
+Asuming N is the number of elements in the array to be sorted.
 Best case: 
            The elements are already sorted thus the time complexity will
            be O(n) as it will only iterate through the outer while loop,
@@ -18,3 +19,14 @@ Worst case:
            be O(n^2) as the outer while loop would run N times, and the inner
            loop would run more iterations as the sorted left subarray grows.
            The amount of times the inner loop would run approaches N times.
+
+
+Analysis for Matrix Multiplication:
+Assuming N is the number of rows in A(also equal to number of columns in B) 
+and M is the number of columns in A
+Best case: 
+           T
+Average case:
+           T
+Worst case:
+           T
