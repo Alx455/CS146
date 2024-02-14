@@ -5,7 +5,11 @@ Best case:
            the inner while loop condition will never evaluate to true, so
            the inner loop will never run.
 Average case:
-           The elements are unsorted
+           The elements are unsorted. The time complexity of thise case would
+           be O(n^2) as the outer while loop will iterate N times. The inner
+           loop will run varying amount of times, but ultimately the algorithm
+           is closer to running the inner loop an N amount of times than 
+           less.
 Worst case:
            The elements are sorted in the opposite order in which inserrtion
            sort is designed to sort them(in most cases, insertion sort orders
