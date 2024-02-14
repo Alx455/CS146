@@ -30,6 +30,11 @@ Best case:
            essentially becomes a multiplication operation, running at time
            complexity of O(1).
 Average case:
-           The average case is 
+           The average case is having square matricies A and B of dimensions
+           4x4 for example. In this case, N = M and all for loops run for the
+           same number of iterations N. Because the first loop nests to other
+           two, the algorithm iterates exponentially. This means the time
+           complexity of this case is O(n^3).
+
 Worst case:
            T
