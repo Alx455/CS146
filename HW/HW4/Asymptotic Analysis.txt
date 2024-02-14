@@ -37,4 +37,9 @@ Average case:
            complexity of this case is O(n^3).
 
 Worst case:
-           T
+           The worst case is having large rectangular matricies A and B of
+           dimensions 10x12 for example. In this case, N < M and the first two
+           loops run for N times, while the innermost loop runs for M
+           times. While this case techincally does run a little longer than
+           the average case, its time complexity still turns out to be
+           O(n^3).
