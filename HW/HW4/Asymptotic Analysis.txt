@@ -25,7 +25,10 @@ Analysis for Matrix Multiplication:
 Assuming N is the number of rows in A(also equal to number of columns in B) 
 and M is the number of columns in A
 Best case: 
-           T
+           The best case is if both matrices A and B are of dimmensions 1x1.
+           This means that the for loops all run only once, and the algorithm
+           essentially becomes a multiplication operations, running at time
+           complexity of O(1).
 Average case:
            T
 Worst case:
