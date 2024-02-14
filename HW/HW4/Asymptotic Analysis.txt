@@ -27,9 +27,9 @@ and M is the number of columns in A
 Best case: 
            The best case is if both matrices A and B are of dimmensions 1x1.
            This means that the for loops all run only once, and the algorithm
-           essentially becomes a multiplication operations, running at time
+           essentially becomes a multiplication operation, running at time
            complexity of O(1).
 Average case:
-           T
+           The average case is 
 Worst case:
            T
