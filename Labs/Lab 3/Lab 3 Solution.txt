@@ -1,8 +1,22 @@
 Problem 1:
 1. 10000000000n^(2) vs n^(3)
+    n^(3) is greater.
+    Although 10000000000n^(2) has a large constant, n^(3) grows at a
+    faster rate due to it being a larger exponent.
+
 2. n^(2)log(n) vs n(log(n))^(10)
+    n^(2)log(n) is greater.
+    The second function can be manipulated into 10nlog(n), which makes
+    the comparison much more clear. You can then see n^(2)log(n) grows
+    at a faster rate than 10nlog(n) because of its exponent.
+
 3. n^(log(n)) vs 2^(root(n))
+    n^(log(n)) is greater.
+    
+
 4. 2^(n) vs 2^(2n)
+    2^(2n) is greater.
+    This is failry simple as 2n is a greater exponent than n on its own.
 
 
 Problem 2:
