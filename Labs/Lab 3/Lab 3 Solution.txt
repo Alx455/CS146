@@ -56,5 +56,3 @@ Worst case:
         many times over. Seeing as the loop condition squares the i variable,
         then the loop executes about root(n) times. The time cpmlexity of this
         case is O(root(n)).
-
-(2 + i)^2
