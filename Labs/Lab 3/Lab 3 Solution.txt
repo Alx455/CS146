@@ -47,12 +47,14 @@ Best case:
         the time cpmplexity would be O(1).
 
 Average case:
-        n is any number 
+        n is a relatively small prime number. In this case, the for loop 
+        executes about root(n) times. This is the same as the worst case
+        where the time complexity is O(root(n)).
 
 Worst case:
         n is a very large prime number. In this case, the for loop will execute
         many times over. Seeing as the loop condition squares the i variable,
         then the loop executes about root(n) times. The time cpmlexity of this
-        case is O(root(n))
+        case is O(root(n)).
 
 (2 + i)^2
