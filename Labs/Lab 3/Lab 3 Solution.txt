@@ -39,6 +39,10 @@ isPrime(n):
   return true
 
 Best case:
-        
+        n is equal to an even number. In this case, the code will return 
+        false on the first iteration of the loop. Additionally, an even better
+        case is whenever n <= 3, as in that case the for loop will not eve 
+        execute as the loop condition will evaluate to false. In both cases, 
+        the 
 Average case:
 Worst case:
