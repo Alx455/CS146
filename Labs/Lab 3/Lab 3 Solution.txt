@@ -21,7 +21,8 @@ Problem 1:
     2log(log(n)) vs log(root(n)log(2))
     By logarithm lawas, we cna isolate our n term:
     2log(log(n)) vs log(root(n)) + log(log(2))
-
+    Here we can see more clearly that the first function grows faster
+    than the second.
 
 4. 2^(n) vs 2^(2n)
     2^(2n) is greater.
@@ -43,6 +44,13 @@ Best case:
         false on the first iteration of the loop. Additionally, an even better
         case is whenever n <= 3, as in that case the for loop will not eve 
         execute as the loop condition will evaluate to false. In both cases, 
-        the 
+        the time cpmplexity would be O(1).
+
 Average case:
+        n is any number 
+
 Worst case:
+        n is a very large prime number. In this case, the for loop will execute
+        many times over 
+
+(2 + i)^2
