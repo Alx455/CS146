@@ -19,6 +19,8 @@ Problem 1:
     Then we take the log again to bring down the exponenet of the
     first function:
     2log(log(n)) vs log(root(n)log(2))
+    By logarithm lawas, we cna isolate our n term:
+    2log(log(n)) vs log(root(n)) + log(log(2))
 
 
 4. 2^(n) vs 2^(2n)
@@ -27,6 +29,16 @@ Problem 1:
 
 
 Problem 2:
+For the below code,
+
+isPrime(n): 
+  for(i = 2, i*i <= n; i++) {
+    if(n % i == 0) {
+      return false
+    }
+  return true
+
 Best case:
+        
 Average case:
 Worst case:
