@@ -49,12 +49,22 @@ Problem 1:
 
 Problem 2:
 
-yetAnotherFunc(n): 
-  if n > 1: 
-    for(i=0;i<10n;i++)
-      doSomething;
-    yetAnotherFunc(n/2);
-    yetAnotherFunc(n/2);
+yetAnotherFunc(n):            # T(N)
+  if n > 1:                   # 1
+    for(i=0;i<10n;i++)        # 10N + 1
+      doSomething;            # 1
+    yetAnotherFunc(n/2);      # T(N/2)
+    yetAnotherFunc(n/2);      # T(N/2)
 
-For the above code
+T(N) = 2T(N/2) + 10N + 3
+Shortening the last portion for simplicity:
+T(N) = 2T(N/2) + N
+Applying Master theorem for divide and conquer algorithnms case 2:
+k = 1
+p = 0
+T(n) = Theta(n^(log2(2))logn)
+     = Theta(nlogn)
+
+
+
 
