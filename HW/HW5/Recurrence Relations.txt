@@ -31,6 +31,14 @@ Problem 1:
    T(n) = Theta(n^(log2(cn) + 1))
         = Theta(n^(log2(n) + 1))
 
+5. T(N) = 4T(N/2) + n^(2)logn
+   Applying Master theorem for divide and conquer algorithnms case 2:
+   k = 2
+   p = 1
+   T(n) = Theta(n^(log2(4))log2(n))
+        = Theta(n^(2)log2(n))
+
+6. 
 
 
 Problem 2:
