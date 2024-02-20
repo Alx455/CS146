@@ -25,7 +25,11 @@ Problem 1:
    k = 2
    T(n) = Theta(n^(log2(9)))
         = Theta (n^(3.17))
-         
+
+4. T(N) = 100T(N/2) + n^(log2cn + 1)
+   Applying Master theorem for divide and conquer algorithnms case 3:
+   T(n) = Theta(n^(log2(cn) + 1))
+        = Theta(n^(log2(n) + 1))
 
 
 
