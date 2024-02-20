@@ -17,11 +17,14 @@ Problem 1:
 
 2. T(N) = 3T(N-1) + N
    Applying Master theorem for decreasing functions case 3:
-   T(n) = O(n^(k)3^(n))
+   k = 1
+   T(n) = O(n3^(n))
 
 3. T(N) = 9T(N/2) + n^2
-   Applying Master theorem for divide and conquer algorithms case 3:
-   T(n) = 
+   Applying Master theorem for divide and conquer algorithms case 1:
+   k = 2
+   T(n) = Theta(n^(log2(9)))
+        = Theta (n^(3.17))
          
 
 
