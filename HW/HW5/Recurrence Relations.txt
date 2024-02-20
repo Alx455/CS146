@@ -16,20 +16,13 @@ Problem 1:
   Time complexity: O(2^n)
 
 2. T(N) = 3T(N-1) + N
-   T(N-1) = 3T(N-2) + N-1
-   T(N-2) = 3T(N-3) + N-2
+   Applying Master theorem for decreasing functions case 3:
+   T(n) = O(n^(k)3^(n))
 
-   T(N) = 3(3T(N-2) + N-1) + N
-        = 9T(N-2) + 4N - 3
-   T(N) = 9(3T(N-3) + N-2) + 4N - 3
-        = 27T(N-3) + 13N - 21
-   T(N) = 27(3T(N-4) + N-3) + 13N - 21
-        = 81T(N-4) + 40N - 102
-   Assume N = k
-   T(N) = 3^(k)T(N-k) + 40k - c
-        = 3^N + 40N - c
-   Order of growth: f(n) = 3^(n) + 40n - c
-   Time complexity: O(3^n)
+3. T(N) = 9T(N/2) + n^2
+   Applying Master theorem for divide and conquer algorithms case 3:
+   T(n) = 
+         
 
 
 
