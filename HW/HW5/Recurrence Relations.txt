@@ -46,5 +46,15 @@ Problem 1:
         = Theta (n^(2.32)log(log(n)))
 
 
+
 Problem 2:
+
+yetAnotherFunc(n): 
+  if n > 1: 
+    for(i=0;i<10n;i++)
+      doSomething;
+    yetAnotherFunc(n/2);
+    yetAnotherFunc(n/2);
+
+For the above code
 
