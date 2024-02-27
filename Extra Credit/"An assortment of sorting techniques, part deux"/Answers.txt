@@ -1,1 +1,12 @@
+We can use heaps as PQs(priority queue). For example, if we wanted to simulate a 
+PQ of integers that prioritizes based on the smaller value, then we would implement
+it as a minheap. The element that would be at the top of the simulated PQ would
+then be the root of our minheap. To simulate our queue pop, we would just delete the
+root node in our minheap. Pushing elements into our simulated PQ would be
+taken care of by our heap property. Essentially, our heap property maintains the
+priority of our integer elements.
+For example, in our minheap below, deleting our root is the same as popping off the
+top of our equivalent PQ
 
+minHeap = {1, 4, 5, 8, 12, 6, 9}         // the equivalent PQ is {1, 2, 3, 6, 8, 9, 12}
+array.
