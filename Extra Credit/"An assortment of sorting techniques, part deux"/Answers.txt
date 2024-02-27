@@ -14,3 +14,17 @@ myMinHeap.delete(0)                        // deleting index of root, same as PQ
 myMinHeap.delete(0)                        // deleting the root again results in an array {5, 6, 12, 8, 9}
                                            // deleting index of root, same as PQ.pop() = 4
                                            // both remove 4
+
+
+
+Seeing as the underlying data structure that maxheaps and minheaps depend on is the same,
+an array, I do believe that we can use one as the other and vice versa. All heap operations
+will still be available between the two, although some may need additional bits of code.
+Lets take heapSort as an example. In a maxheap, heapSort produces an ascending ordered array,
+and in a minheap, it produces a descending ordered array. What if we wanted to produce a
+descending ordered array using heapSort on a maxheap. This could be accomplished by including
+an in place reversal of the product array of heapSort. The in place reversal would take no
+additional space, maintaining heapSort's space complexity of O(n). Because the reversal
+simply traverses the array at O(n), it would still maintain heapSort's time complexity of
+O(nlogn). Below is a pseudocode example of heapSort for a maxheap that produces a descending
+ordered array. 
