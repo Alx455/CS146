@@ -28,3 +28,22 @@ additional space, maintaining heapSort's space complexity of O(n). Because the r
 simply traverses the array at O(n), it would still maintain heapSort's time complexity of
 O(nlogn). Below is a pseudocode example of heapSort for a maxheap that produces a descending
 ordered array. 
+
+
+
+heapSort(A)
+  buildHeap(A)
+  for i from length(A) to 1
+    swap A[0] and A[i]
+    heapify
+    
+  i = length(A) - 1;
+  j = 0;
+  while(i > j)
+  {
+    temp = A[i];
+    A[i] = A[j];
+    A[j] = temp;
+    i--;
+    j++;
+  }
