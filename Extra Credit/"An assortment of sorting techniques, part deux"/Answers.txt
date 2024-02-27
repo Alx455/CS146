@@ -32,18 +32,15 @@ ordered array.
 
 
 heapSort(A)
-  buildHeap(A)
-  for i from length(A) to 1
-    swap A[0] and A[i]
-    heapify
-    
-  i = length(A) - 1;
-  j = 0;
-  while(i > j)
-  {
-    temp = A[i];
-    A[i] = A[j];
-    A[j] = temp;
-    i--;
-    j++;
-  }
+    buildHeap(A)
+    for i from length(A) to 1
+        swap A[0] and A[i]
+        heapify(A, 0)
+    i = length(A) - 1;
+    j = 0;
+    while i > j
+        temp = A[i];
+        A[i] = A[j];
+        A[j] = temp;
+        i--;
+        j++;
