@@ -10,3 +10,12 @@ start intervals with the smallest end interval that currently occupied a server.
 I iterated through the time intervals and added/popped the priority queue
 accordingly. At the end, I return the size of the queue as it will contain all the 
 seperate end intervals that were occupying a server at the same time.
+
+Addendum:
+Because I have minimal python experience prior to this course, I typically code my
+initial solutions in java, and then translate that code into python. I found out that
+python has no built in priority queues, and so I found myself at a halt when trying to 
+translate my java code which used a priority queue. By a little research, I found out
+python has an import called heapq. It is essentially a priority queue but has the
+operations denoted as the operations of a heap. It really helped solidify my understanding
+of how a heaps can be used as priority queues!
