@@ -8,5 +8,9 @@ priority of our integer elements.
 For example, in our minheap below, deleting our root is the same as popping off the
 top of our equivalent PQ
 
-minHeap = {1, 4, 5, 8, 12, 6, 9}         // the equivalent PQ is {1, 2, 3, 6, 8, 9, 12}
-array.
+myMinHeap = {1, 4, 5, 8, 12, 6, 9}         // the equivalent PQ is {1, 4, 5, 6, 8, 9, 12}
+myMinHeap.delete(0)                        // deleting index of root, same as PQ.pop() = 1
+                                           // both remove 1
+myMinHeap.delete(0)                        // deleting the root again results in an array {5, 6, 12, 8, 9}
+                                           // deleting index of root, same as PQ.pop() = 4
+                                           // both remove 4
