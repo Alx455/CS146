@@ -5,3 +5,6 @@ creating the list for the current BST level. An inner while loop takes care of
 adding the current level node values into our sublist while simultaneously adding the nodes
 of the next level to the queue. The inner loop is dependednt on the amount of nodes that were
 added in the previous iteration, so it hnadles only the nodes of that current level.
+After each iteration of the outer while loop, the completed sublist for the current level
+is added to the answer list. I finally return the completed answer list after all iterations
+of the while loops are finished.
