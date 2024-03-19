@@ -4,17 +4,17 @@ def levelOrder(root) -> list[list[int]]:
         return None
     nodes = []
     nodes.append(root)
-    while not nodes:
+    while len(nodes) > 0:
         level = []
         x = len(nodes)
         i =0
         while i < x:
-            n = nodes.pop()
+            n = nodes.pop(0)
             if n.left != None:
                 nodes.append(n.left)
             if n.right != None:
                 nodes.append(n.right)
             level.append(n.val)
             i += 1
-        levels.add(level)
+        levels.append(level)
     return levels
