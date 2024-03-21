@@ -30,4 +30,12 @@
     adjList.value = list
 
 
-3. 
+3. If given the adjacency matrix of a directed graph, you first create another 2D array to store
+   the reveresed version of the graph. Then you iteraate through the adjacency matrix given with
+   two for loops and store each element in the inverse position of the original matrix.
+
+   Pseudo:
+   revAdjMatrix[size][size]
+   for each i from 0 to column length
+       for each j from 0 to row length
+           revAdjMatrix[j][i] = originalAdjMatrix[i][j]
