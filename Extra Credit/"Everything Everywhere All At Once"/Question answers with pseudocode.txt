@@ -1,10 +1,25 @@
-1. 
+1. To convert an adjacency list to an adjacency matrix, you create a 2D array whose dimensions
+   are equal to the size of the adjacency list(hashmap). Then you iterate through the map, 
+   saving both the key and value to variables. With an inner for loop, you iterate through the
+   list that was retrieved from the hashmap value and set the corresponding adjacency Matrix position
+   to TRUE(1).
+
+   pseudo:
+   adjMatrix[size of adjList][size of adjList]
+   for each key i in adjList
+       key = adjList.key at i
+       value = adjList.value of key
+       for each i in value
+           adjMatrix[key][value[i]] = 1
+
+
 2. To convert an adjacency matrix to an adjacency list, you iterate throuhg the matrix with 2 loops.
    The outer loop iterates through the the column while the inner loop iterates through the row(this
    process can be carried out inversely, where the outer loop iterates through the row and the inner
    through the column). For each iteration of the outer loop, create a list and add it to a hashmap
    where they key is the node and the value is its adjacency list. The list created in the outer loop
    will store the values found in the row iterated by the inner loop.
+
    Pseudo:
    adjList = []
    for each i from 0 to column length
