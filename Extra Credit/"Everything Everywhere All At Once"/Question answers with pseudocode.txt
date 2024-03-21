@@ -21,13 +21,13 @@
    will store the values found in the row iterated by the inner loop.
 
    Pseudo:
-   adjList = []
+   adjList = hashmap
    for each i from 0 to column length
        list = []
-       for each value in ith row
-          add value to list
-    adjList.key = i
-    adjList.value = list
+       for each j from 0 to row length
+          if adjList.value at j == 1
+              add j to list
+    adjList.key = list
 
 
 3. If given the adjacency matrix of a directed graph, you first create another 2D array to store
