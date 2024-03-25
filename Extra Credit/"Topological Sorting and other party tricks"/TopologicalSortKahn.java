@@ -12,15 +12,15 @@ public class Main {
 
         List<Integer> sorted = new LinkedList();
 
-        Queue<Integer> toBeSorted = new LinkedList<Integer>();
-
+        List<Integer> toBeSorted = new ArrayList<Integer>();
         for (int j = 0; j < indegrees.length; j ++) {
             if (indegrees[j] == 0)
                 toBeSorted.add(j);
         }
 
         while (!toBeSorted.isEmpty()) {
-            int current = toBeSorted.poll();
+            int current = toBeSorted.get(0);
+            toBeSorted.remove(0);
             sorted.add(current);
 
             List<Integer> outgoing = graph.get(current);
@@ -30,6 +30,7 @@ public class Main {
                     toBeSorted.add(outgoing.get(k));
             }
         }
+
 
         if (sorted.size() != graph.size()) {
             List<Integer> invalid = new LinkedList();
