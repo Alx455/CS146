@@ -13,4 +13,10 @@ was essentially the BFS. Then when I go around to programming BFS, I found that 
 implementation. I am not sure if I understand the difference between the Kahn and BFS implemntations
 as they both seem to work on the same basis of moving to neighbooring nodes based on indegrees.
 Because their implementation are nearly identical(with the only difference being the use of a list
-in Kahn's over a queue in BFS) they both porduced the same ordering of the sample input.
+in Kahn's over a queue in BFS) they both porduced the same ordering of the sample input, as seen below:
+[0, 1, 2, 3, 4, 5]
+My DFS version on the other hand produced a variation of the output with the same input(still a valid
+ordering):
+[0, 2, 1, 3, 5, 4]
+This was simply the nature of DFS beginning to order the nodes from the ones that were deepest rather
+than by examining the indegrees.
